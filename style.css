@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #40E0D0;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #40E0D0;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+.input-section h2 {
+  margin-bottom: 10px;
+  color: #40E0D0;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 15px 20px;
+  font-size: 18px;
+  background-color: #40E0D0;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.15s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #36c9c6;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.result h2 {
+  color: #40E0D0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.result input[type="number"] {
+  width: 60px;
+  padding: 8px;
+  font-size: 16px;
+  margin-left: 10px;
+  border: 2px solid #40E0D0;
+  border-radius: 5px;
+}
+
+#tangkaiDisplay,
+#lensaDisplay,
+#strengthDisplay,
+#jenisLensaDisplay {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  padding: 10px;
+  border: 2px solid #40E0D0;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.next-button-container {
+  margin-top: 15px;
+}
